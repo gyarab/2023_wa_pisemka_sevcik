@@ -19,22 +19,40 @@
 
         margin-bottom: 30px;
       }
+      .box {
+        color: white;
+        text-align: center;
+        line-height: 600%;
+      }
+      .red {
+        background-color: red;
+      }
+      .orange {
+        background-color: orange;
+      }
+      .zelena {
+        background-color: green;
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <i class="navbar-toggler-icon"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#boxy">Boxy</a>
-              <a class="nav-link" href="#lorem">Lorem</a>
-            </div>
+          <div class="collapse navbar-collapse" id="collapse">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#boxy">Boxy</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#lorem">Lorem</a>
+                  </li>
+              </ul>
           </div>
-        </div>
-      </nav>
+      </div>
     </nav>
 
     <div class="container">
@@ -69,17 +87,37 @@
 
     <div class="container">
     <h2 id="boxy">Boxy</h2>
-      <div class="row">
-        <div class="col col-md-4">
-          <img src="https://placehold.co/450x200/green/white?text=Zelená" alt="img_test" />
+      <div class="container mb-1 mb-md-4 ">
+            <div class="row">
+                <div class="col-12 col-md-4 order-md-1 order-3 zelena">
+                    <div class="mb-3 mb-md-1 zelena">
+                        <div>
+                            <h2 class="box"> Zelená
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 order-md-1 order-2 orange">
+                    <div class="mb-3 mb-md-1 orange">
+                        <div>
+                            <h2 class="box">
+                                Orange
+
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 order-md-1 order-1 red">
+                    <div class=" mb-3 mb-md-1 red">
+                        <div>
+                            <h2 class="box">
+                                Red
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col col-md-4">
-          <img src="https://placehold.co/450x200/orange/white?text=Oranžová" alt="img_test" />
-        </div>
-        <div class="col col-md-4">
-          <img src="https://placehold.co/450x200/red/white?text=Červená" alt="img_test" />
-        </div>
-      </div>
 
       <!--TODO dodelat odstavce-->
       <h2 id="lorem">Lorem</h2>
